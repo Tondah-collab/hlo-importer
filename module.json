@@ -1,7 +1,7 @@
 {
-  "id": "hlo-importer",
-  "title": "Herolab Online PF2e Import Tool",
-  "description": "This module adds a button to the top of player character sheets allowing them to quickly import their character from Herolab Online.",
+  "id": "hlo-importer-local",
+  "title": "Herolab Online PF2e Import Tool (Local Fork)",
+  "description": "Adds a button to PF2e character sheets to import characters from Herolab Online JSON.",
   "author": "slate",
   "authors": [
     {
@@ -12,40 +12,27 @@
       "ko-fi": "SLATE"
     }
   ],
-  "version": "0.10.1",
-  "compatibility": {
-    "minimum": "10",
-    "verified": "10.285",
-    "maximum": "10"
-  },
-  "compatibleCoreVersion": "10",
-  "relationship": {
+  "version": "0.11.0",
+  "compatibility": { "minimum": "13", "verified": "13.350" },
+  "relationships": {
     "systems": [
       {
         "id": "pf2e",
         "type": "system",
         "manifest": "https://github.com/foundryvtt/pf2e/releases/download/latest/system.json",
-        "compatibility": {
-          "minimum": "4.0.0",
-          "verified": "4.0.5"
-        }
+        "compatibility": { "minimum": "7.0.0", "verified": "7.6.3" }
       }
     ]
   },
-  "esmodules": [ 
-        "hlo-importer.min.js"
-    ],
+  "esmodules": ["hlo-importer.js"],
   "styles": [],
   "packs": [],
-  "url": "https://github.com/zarmstrong/hlo-importer",
-  "manifest": "https://raw.githubusercontent.com/zarmstrong/hlo-importer/main/module.json",
-  "download": "https://github.com/zarmstrong/hlo-importer/releases/download/hlo-importer-0.10.1/hlo-importer-0.10.1.zip",
+  "url": "https://github.com/Tondah-collab/hlo-importer",
   "license": "MIT",
-  "readme": "https://github.com/zarmstrong/hlo-importer",
-  "bugs": "https://github.com/zarmstrong/hlo-importer/issues",
+  "readme": "https://github.com/Tondah-collab/hlo-importer",
+  "bugs": "https://github.com/Tondah-collab/hlo-importer/issues",
   "flags": {
     "manifestPlusVersion": "1.2.0",
     "allowBugReporter": true
-  },
-  "changelog": "https://github.com/zarmstrong/hlo-importer/blob/main/CHANGELOG.md"  
+  }
 }
